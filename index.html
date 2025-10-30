@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web - Pedro Gasca Fragoso</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#presentacion">🏠 Inicio</a></li>
+                <li><a href="#formacion">🎓 Formación Académica</a></li>
+                <li><a href="#contacto">📧 Email</a></li>
+                <li><a href="#redes">🔗 Redes Sociales</a></li>
+                <li><a href="#hobbies">🎨 Hobbies</a></li>
+                <li><a href="#criptografia">🔐 Criptografía</a></li>
+                <li><a href="#descargas-utiles">📄 CV y Llave Publica</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="presentacion">
+            <div class="video-container">
+                <video autoplay loop muted playsinline id="fondo-video">
+                    <source src="videos/fondo.mp4" type="video/mp4">
+                    Tu navegador no soporta el video de fondo.
+                </video>
+                <div class="content-overlay"></div>
+                    <div class="perfil">
+                        <img src="images/foto.jpeg" alt="Mi fotografía personal" class="foto-perfil">
+                        
+                        <h1>Pedro Gasca Fragoso</h1>
+                        <h2>Estudiante de Ingeniería en Sistemas Computacionales</h2>
+                        
+                        <p>Bienvenido/a a mi página web. Aquí podrás explorar mi trayectoria profesional y mis intereses.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacion">
+            <h2>Formación Académica</h2>
+            
+            <article class="estudio">
+                <h3>Lic. en Ingeniería en Sistemas Computacionales</h3>
+                <p><strong>Institución:</strong> Escuela Superior de Cómputo - IPN</p>
+                <p><strong>Período:</strong> 2022 - Actualidad</p>
+                <p><strong>Trabajo Terminal:</strong> Sistema Web de Monitoreo de Red con Detección de Amenazas haciendo uso Machine Learning.</p>
+            </article>
+            
+            <article class="estudio">
+                <h3>Técnico en Computación</h3>
+                <p><strong>Institución:</strong> Centro de Estudios Científicos y Tecnológicos No.3 "Estanislao Ramírez Ruíz"</p>
+                <p><strong>Período:</strong> 2019 - 2022</p>
+                <p><strong>Actividad Integradora:</strong> Desarrollo de aplicación web para el aprendizaje de la Tabla Periódica.</p>
+            </article>
+            
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto Directo</h2>
+            <p>Puedes contactarme a través de mi correo electrónico:</p>
+            
+            <p>Email Personal: 
+                <strong>
+                    <a href="mailto:pedrogasfra0409@gmail.com">pedrogasfra0409@gmail.com</a>
+                </strong>
+            </p>
+            <p>Email Institucional: 
+                <strong>
+                    <a href="mailto:pgascaf1900@alumno.ipn.mx">pgascaf1900@alumno.ipn.mx</a>
+                </strong>
+            </p>
+        </section>
+
+        <section id="redes">
+            <h2>Mis Redes Sociales</h2>
+            <div class="botones-redes"> 
+                <a href="https://github.com/PedroGF04" target="_blank" class="btn-red-social github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                
+                <a href="https://www.instagram.com/pedrogf.04/" target="_blank" class="btn-red-social instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                
+                <a href="https://www.facebook.com/pedro.gf.3?locale=es_LA" target="_blank" class="btn-red-social facebook">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>Mis Hobbies</h2>
+            <p>Me gusta desconectar y aprender cosas nuevas con estas actividades:</p>
+
+            <div class="galeria-hobbies">
+                
+                <article class="hobby">
+                    <h3>Escuchar Música</h3>
+                    <img src="images/musica.png" alt="Mis gustos" class="media-hobby">
+                    <p>Escucho música principalmente en idioma japonés, donde la mayor parte son bandas virtuales. Disfruto mucho las canciones, ya que me han motivado y ayudado en distintos momentos de mi vida. Además, son muy pegadizas y realizo la mayoría de mis actividades escuchándolas.</p>
+                    <p>Entre los grupos que escucho están:</p>
+                    <ul>
+                        <li>Wonderlands x Showtime</li>
+                        <li>Ryuseitai</li>
+                        <li>Vivid Bad Squad</li>
+                        <li>Vocaloid</li>
+                        <li>Trickstar</li>
+                        <li>Alien Stage</li>
+                        <li>F/ACE</li>
+                    </ul>
+                </article>
+
+                <article class="hobby">
+                    <h3>Jugar Videojuegos</h3>
+                    <p>Los videojuegos que juego son principalmente de ritmo, RPG y gacha. Entre los cuales están:</p>
+                    <ul>
+                        <li>
+                            <h4>Honkai Star Rail</h4>
+                            <video controls muted loop class="media-hobby">
+                                <source src="videos/honkai.mp4" type="video/mp4">
+                                Tu navegador no soporta el video.
+                            </video>
+                        </li>
+                        
+                        <li>
+                            <h4>Project Sekai</h4>
+                            <video controls muted loop class="media-hobby">
+                                <source src="videos/pjsekai.mp4" type="video/mp4">
+                                Tu navegador no soporta el video.
+                            </video>
+                        </li>
+                        
+                        <li>
+                            <h4>Ensemble Stars!!</h4>
+                            <video controls muted loop class="media-hobby">
+                                <source src="videos/ensemble.mp4" type="video/mp4">
+                                Tu navegador no soporta el video.
+                            </video>
+                        </li>
+                        
+                        <li>
+                            <h4>Genshin Impact</h4>
+                            <video controls muted loop class="media-hobby">
+                                <source src="videos/genshin.mp4" type="video/mp4">
+                                Tu navegador no soporta el video.
+                            </video>
+                        </li>
+                        
+                        <li>
+                            <h4>Haikyu!! Fly High</h4>
+                            <video controls muted loop class="media-hobby">
+                                <source src="videos/haikyu.mp4" type="video/mp4">
+                                Tu navegador no soporta el video.
+                            </video>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="hobby">
+                    <h3>Coleccionismo</h3>
+                    <img src="images/coleccionismo.jpg" alt="Mi colección de objetos" class="media-hobby">
+                    <p>Me gusta coleccionar distintas cosas de los diferentes gustos que tengo. Es una forma divertida de celebrar mis aficiones.</p>
+                    <p>Entre los que colecciono está:</p>
+                    <ul>
+                        <li>Discos</li>
+                        <li>Figuras</li>
+                        <li>Peluches</li>
+                        <li>Mangas</li>
+                        <li>Posters o ilustraciones</li>
+                        <li>Llaveros y pines</li>
+                        <li>Calendarios</li>
+                    </ul>
+                    <img src="images/mangas.jpg" alt="Mis mangas" class="media-hobby">
+                </article>
+            </div>
+        </section>
+
+        <section id="criptografia">
+            <h2>Acerca de Criptografía: La Biografía de Alan Turing</h2>
+            
+            <div class="biografia-turing">
+                <div class="texto-biografia">
+                    <p>Alan Turing fue un matemático, lógico, informático, criptógrafo y filósofo británico. Es mundialmente reconocido como el padre de la ciencia de la computación y uno de los pioneros de la inteligencia artificial.</p>
+
+                    <h3>Logros Académicos y la Máquina Teórica</h3>
+                    <p>Nacido en Londres en 1912, Turing demostró una aptitud excepcional para las matemáticas y la ciencia desde temprana edad. Estudió en el King's College de Cambridge.</p>
+                    <p>Su contribución teórica más influyente se produjo en 1936, cuando publicó el artículo "On Computable Numbers", donde introdujo el concepto de la Máquina de Turing. Esta máquina teórica es un modelo abstracto que describe cómo podría funcionar una computadora de propósito general, estableciendo las bases de la computabilidad y la informática moderna.</p>
+
+                    <h3>El Criptoanálisis en la Segunda Guerra Mundial</h3>
+                    <p>Durante la Segunda Guerra Mundial, Turing fue reclutado y trabajó en Bletchley Park, el centro de descifrado de códigos del Reino Unido. Su trabajo allí fue vital para el esfuerzo de guerra de los Aliados.</p>
+                    <p>Lideró el equipo responsable de descifrar los mensajes codificados por la máquina Enigma utilizada por la Marina Alemana. Para lograrlo, diseñó la "Bombe", una máquina electromecánica que aceleraba el proceso de descifrado. Se estima que su trabajo acortó la guerra en varios años, salvando millones de vidas. Por razones de seguridad nacional, su labor permaneció en estricto secreto durante décadas.</p>
+
+                    <h3>Postguerra y la Inteligencia Artificial</h3>
+                    <p>Después de la guerra, Turing continuó su trabajo pionero. Contribuyó al diseño de una de las primeras computadoras de programa almacenado.</p>
+                    <p>En 1950, publicó el artículo Computing Machinery and Intelligence, donde exploró la posibilidad de que las máquinas pudieran pensar. En este trabajo, propuso el famoso Test de Turing, una prueba que sugiere que si un humano no puede distinguir si está conversando con otra persona o con una máquina, entonces se puede considerar que la máquina es "inteligente".</p>
+
+                    <h3>Persecución y Muerte</h3>
+                    <p>A pesar de sus incalculables contribuciones, la vida de Turing terminó en tragedia. En 1952, fue arrestado y procesado por "indecencia grave" debido a su homosexualidad, que era un crimen en el Reino Unido en ese momento.</p>
+                    <p>Fue condenado y se le obligó a elegir entre la prisión o un tratamiento de castración química (inyecciones de hormonas femeninas). Eligió el tratamiento hormonal, que tuvo efectos devastadores en su salud física y mental. Murió el 7 de junio de 1954 por envenenamiento con cianuro, y su muerte fue declarada como suicidio.</p>
+                </div>
+                <div class="imagen-turing">
+                    <img src="images/alanturing.jpg" alt="Retrato de Alan Turing">
+                    <p class="caption">Alan Turing. Criptógrafo y pionero de la computación.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="descargas-utiles">
+            <h2>Curriculum Vitae y Llave Pública</h2>
+            
+            <p>
+                📄 Curriculum Vitae
+                <a href="documentos/CV.pdf" download="CV_Pedro Gasca Fragoso.pdf" class="btn-descarga">
+                    Mi CV
+                </a>
+            </p>
+
+            <p>
+                🔑 Llave Pública
+                <a href="documentos/Llave.pdf" download="LlavePublica_PedroGasca.pdf" class="btn-descarga" id="link-llave-publica">
+                    Mi Llave Pública
+                </a>
+                <small>(Disponible pronto con la práctica RSA)</small>
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Introduction to Cryptography &bull; &copy; 2025 Gasca Fragoso Pedro</p>
+    </footer>
+
+</body>
+</html>
