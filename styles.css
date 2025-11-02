@@ -51,12 +51,28 @@ section {
 /* 2. ENCABEZADO Y NAVEGACIÓN (HEADER/NAV) */
 /* ==================================================================== */
 header {
-    background-color: var(--color-secundario);
+    /* Mantenemos el fondo oscuro como color de reserva */
+    background-color: var(--color-secundario); 
     color: var(--color-claro);
     padding: 15px 5%;
-    position: sticky; /* Fija la barra de navegación al hacer scroll */
+    position: sticky;
     top: 0;
     z-index: 1000;
+    
+    /* === PROPIEDADES DE LA IMAGEN DE FONDO === */
+    background-image: url('images/Fondo-Pagina.jpg'); /* ⬅️ REEMPLAZA CON LA RUTA DE TU IMAGEN */
+    background-repeat: no-repeat;
+    background-size: cover; /* Asegura que la imagen cubra todo el ancho y alto del header */
+    background-position: center center; /* Centra la imagen */
+
+    /* === EFECTO DE LIGERA OPACIDAD (para que el texto se vea bien) === */
+    /* Usamos una superposición de degradado para oscurecer la imagen y mantener el texto legible */
+    background-image: 
+        linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), /* Capa oscura (70% de opacidad) */
+        url('images/Fondo-Pagina.jpg'); /* ⬅️ Repite la imagen aquí */
+    
+    background-size: cover; 
+    background-position: center center;
 }
 
 nav ul {
@@ -106,6 +122,13 @@ nav ul li a:hover {
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
     position: relative; 
     z-index: 4; 
+}
+
+.perfil-redes {
+    display: flex;
+    justify-content: center !important;;  /* Centra los íconos horizontalmente */
+    gap: 15px;                /* Espacio entre botones */
+    margin-top: 15px;
 }
 
 /*#presentacion h1 {
@@ -179,7 +202,7 @@ nav ul li a:hover {
 
 .botones-redes {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 15px;
     margin-top: 20px;
 }
@@ -313,10 +336,23 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 20px;
+    
+    /* Mantenemos el color de reserva y el color de texto claro */
     background-color: var(--color-secundario);
     color: #bdc3c7;
     font-size: 0.9em;
     margin-top: 20px;
+    
+    /* === PROPIEDADES DE LA IMAGEN DE FONDO === */
+    background-image: 
+        /* 1. Capa Oscura: Más opaca (0.8) para asegurar que el texto sea muy legible */
+        linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), 
+        /* 2. Imagen de Fondo */
+        url('images/Fondo-Pagina.jpg'); /* ⬅️ REEMPLAZA CON LA RUTA DE TU IMAGEN */
+    
+    background-repeat: no-repeat;
+    background-size: cover; /* Cubre todo el área */
+    background-position: center bottom; /* Centra horizontalmente, enfoca la parte inferior */
 }
 
 /* ==================================================================== */
