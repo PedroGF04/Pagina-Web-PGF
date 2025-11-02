@@ -382,6 +382,46 @@ footer {
     }
 }
 
+/* RESPONSIVE - PERFIL EN PRESENTACIÓN */
+@media (max-width: 768px) {
+    .video-container {
+        height: auto; /* Ajusta altura según contenido */
+    }
+
+    .perfil {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .perfil h1 {
+        font-size: 1.5em;
+    }
+
+    .perfil h2 {
+        font-size: 1em;
+    }
+
+    .perfil p {
+        font-size: 0.9em;
+    }
+
+    .perfil-redes {
+        gap: 8px;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn-red-social {
+        padding: 6px 10px;
+        font-size: 0.9em;
+    }
+
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+    }
+}
+
 /* Estilos para la sección de Biografía de Alan Turing */
 .biografia-turing {
     display: flex;
