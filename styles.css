@@ -223,7 +223,7 @@ nav ul li a:hover {
 
 /* ESTILOS PARA LA SECCIÓN DE DESCARGAS Y LINKS */
 #descargas-utiles {
-    text-align: center;
+    text-align: left;
 }
 
 #descargas-utiles p {
@@ -283,7 +283,7 @@ nav ul li a:hover {
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
     background-color: #f9f9f9;
 }
 
@@ -294,6 +294,10 @@ nav ul li a:hover {
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 10px;
+}
+
+.hobby h3 {
+    text-align: center;
 }
 
 #criptografia h3 {
@@ -539,4 +543,9 @@ footer {
 #presentacion .perfil h2 {
     font-size: 1.3em; /* Reducido un poco */
     margin-bottom: 20px;
+}
+
+.nota-descarga {
+    display: block; /* Asegura que margin-top funcione */
+    margin-top: 10px; /* Ajusta este valor para el espacio deseado */
 }
